@@ -25,7 +25,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.ssh.forward_agent = true
 
   config.vm.synced_folder ENV['GOPATH'], "/go"
-  config.vm.synced_folder ENV['HOME'] + '/projects/oss/didip/mcrouter-util', "/mcrouter-util"
+  config.vm.synced_folder ENV['HOME'] + '/Code/mcrouter-util', "/mcrouter-util"
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
